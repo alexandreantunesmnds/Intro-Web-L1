@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="Le Roi Lion"/>
+		<title>Avis</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="haut">
+			<img src="../Images/header.jpg" alt="Affiche" title=" by Miweebo : https://pxhere.com/fr/photo/1592179" width="725">
+		</div>
+		<div class="gauche">
+			<a class = "navigation" href="../index.html"> Accueil </a>
+			<br/>
+			<br/>
+			<a class = "navigation" href="../Ratatouille/Ratatouille.html"> Ratatouille </a>
+			<br/>
+			<br/>
+			<a class = "navigation" href="../Roi_lion/Roi_lion.html"> Le Roi Lion </a>
+			<br/>
+			<br/>
+			<a class = "navigation" href="../Age_de_glace/Age_de_glace.html"> L'Âge de glace </a>
+			<br/>
+			<br/>
+			<a class = "navigation" href="formulaire.html"> Avis </a>
+		</div>
+		<div class="centre">
+			<h1>Votre avis :</h1>
+			<form method="post" action="formulaire.php">
+				<fieldset>
+					<legend>
+						 Informations personnelles
+					</legend>
+					<br/>
+					<label for ="nom">*Nom : </label>
+					<input type="text" id="nom" name="nom" size="25" maxlenght="100" required autofocus>
+					<br/>
+					<label for ="prénom">  *Prénom : </label>
+					<input type="text" id="prénom" name="prénom" size="25" maxlenght="100" required>
+					<br/>
+					<label for ="age">  Votre tranche d'âge : </label>
+					<select name="age">
+						<br/>
+						<option> Choisir parmi la liste </option>
+						<option> Moins de 15 ans </option>
+						<option> Entre 15 et 25 ans</option>
+						<option> Entre 25 et 35 ans </option>
+						<option> Entre 35 et 45 ans </option>
+						<option> Entre 45 et 55 ans  </option>
+						<option> Entre 55 et 65 ans </option>
+						<option> Entre 65 et 75 ans </option>
+						<option> Plus de 75 ans </option>
+						<br/>
+					</select>
+					<br/>
+					<br/>
+					<label for ="email"> *Adresse e-mail : </label>
+					<input type="email" id="email" name="email" size="25" maxlenght="100" required>
+					<br/>
+					<br/>
+				</fieldset>
+				<br/>
+				<fieldset>
+					<legend>
+						Vos préférences
+					</legend>
+					<br/>
+					<label for="prod">Vos producteurs d'animation préférés : </label>
+					<br/>
+					<br/>
+					<input type="checkbox" name="prod" id="Pixar">
+					<label for="prod">Pixar</label>
+					<br/>
+					<input type="checkbox" name="prod" id="Walt Disney Animation Studios">
+					<label for="prod">Walt Disney Animation Studios</label>
+					<br/>
+					<input type="checkbox" name="prod" id="Blue Sky Studios Inc.">
+					<label for="prod">Blue Sky Studios Inc.</label>
+					<br/>
+					<input type="checkbox" name="prod" id="Autre">
+					<label for="prod">Autre</label>
+					<br/>
+					<br/>
+					<label for="list">
+						Votre Dessin Animé préféré : 
+						<select name="list">
+							<br/>
+							<option> Choisir parmi la liste </option>
+							<option> Le Roi Lion </option>
+							<option> L'Âge de glace </option>
+							<option> Ratatouille </option>
+							<option> T'choupi </option>
+							<option> Mickey </option>
+							<option> Scooby-Doo </option>
+							<option> Autre </option>
+							<br/>
+							<br/>
+							<textarea name="multiligne" id= "multiligne" rows="10" cols="40" placeholder="Saisissez ici pour quelles raisons préférez-vous ce film d'animation."></textarea>
+							<br/>
+							<br/>
+						</fieldset>
+						<br/>
+						<fieldset>
+							<legend>
+								Votre avis sur ce site web :
+							</legend>
+							<br/>
+							<label for ="gout">
+								 Vous avez trouvé le choix des couleurs du site : 
+								<label/>
+								<input type="radio" name="gout" value="Nul" checked>
+								 Nul 
+								<br>
+								<input type="radio" name="gout" value="Moyen" checked>
+								Moyen
+								<br>
+								<input type="radio" name="gout" value="Bon" checked>
+								Bon
+								<br>
+								<input type="radio" name="gout" value="Très bon" checked>
+								Très bon
+								<br>
+								<br/>
+								<label for="multiligne"> Parce que votre avis compte pour nous dites nous en quelques mots ce que vous pensez de ce site web : </label>
+								<textarea name="multiligne" id= "multiligne" rows="10" cols="40" placeholder="Je trouve que ce site manque de couleurs..."></textarea>
+								<p>
+									* Champs obligatoires 
+								</p>
+							</fieldset>
+							<input type="reset" value="Remettre à zéro">
+							<input type="submit" value="Soumettre">
+						</form>
+						<a id="back" href="../Age_de_glace/Age_de_glace.html"> L'Âge de glace </a>
+						<a id="next" href="../index.html"> Accueil </a>
+					</div>
+				</body>
+			</html>
+
